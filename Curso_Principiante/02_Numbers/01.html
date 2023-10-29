@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Operaciones con Numbers</title>
+</head>
+<body>
+    <script>
+        
+        // typeof: Devuelve el tipo de variable
+        let num = 20;
+        console.log(typeof num);
+
+        // NaN
+        const notNumber= 2 - 'hola';
+        console.log(typeof notNumber);
+
+        // isNaN: devuelve si el valor es númerico o no
+        console.log(isNaN(notNumber)); // True
+        console.log(isNaN(8)); // False
+        console.log(isNaN('8')); // False
+        console.log(isNaN('hola')); // True
+
+        // toString()
+        let numero = 28;
+        console.log(typeof numero);
+        console.log(typeof numero.toString());
+
+        // toFixed()
+        let numDos=18.148381243;
+        console.log(numDos.toFixed());
+        console.log(numDos.toFixed(2));
+        console.log(numDos.toFixed(3));
+        console.log(numDos.toFixed(4));
+
+    </script>
+    
+</body>
+</html>

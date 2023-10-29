@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Variables</title>
+</head>
+<body>
+    <script>
+
+        // Variables const (no cambian su valor)
+        const nombre = 'Daniel Alfonso';
+        console.log(nombre);
+
+        // Variables locales (solo accesible dentro de un bloque)
+        
+        if (true){
+            let apellido = 'Rodríguez';
+        }
+        //console.log(apellido); dará eror, puesto que la variable no es visible fuera del bloque
+        
+
+        // Variable var. Se pueden definir despues de ser utilizadas
+        console.log(apodo); // Undefined
+        var apodo = 'Den';
+        
+        
+        // Mostramos el nombre
+        console.log(nombre);
+    </script>
+    
+</body>
+</html>
