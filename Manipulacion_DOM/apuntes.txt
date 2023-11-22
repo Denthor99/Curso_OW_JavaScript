@@ -1,0 +1,77 @@
+OBJETOS PRINCIPALES
+WINDOW
+Referencia a la propia pantalla del navegador
+DOCUMENT
+Donde se carga la pagina web, siendo el punto de entrada a los elementos de mi página
+Node
+Todos los objetos que contiene un document (text, attributes, etiqueta)
+Elements (node)
+tipo de nodos especificos
+NodeList
+Array de elementos
+NamedNodeMap
+Array de elementos de acceso por índice o por nombre
+Attributes (node)
+Etiquetas
+
+Ejemplo
+
+Document
+	Element Raíz <html>
+		Element <head>
+			Element <title>
+				Text "Mi página"
+		Element <body>
+			Element <img>
+				Attribute "src"
+
+Propiedades
+className= nombre de la clase
+hidden= si está oculto
+innetText= texto entre etiquetas			
+
+Herramientas de Google Chrome
+
+Para acceder a ella deberemos pulsar F12
+
+Panel Elements
+Nos permite visualizar el código del sitio web. Nos permite además añadir nuevos elementos
+
+Panel Console
+Interprete javascript que nos permite interactuar con la página
+Ejecuta cualquiero código js
+Acceso directo al código js que causo un error para depurarlo
+
+Panel sources
+Pemite depurar nuestro código JS y encontrar errores en nuesto código
+
+SELECCIÓN DE ELEMENTOS
+
+Escoger de todo el arbol de elementos, aquellos con los que queremos trabajar
+Selecciono->Procesamiento de resultados->operación
+Podemos obtener uno(body), ninguno(tabla no creada) o varios resultados(h1)
+
+- .getElementById(String id): nos devuelve un elemento que contenga un id concreto
+- .getElementsByTagName("etiqueta"): nos devuelve un array de elementos que tengan una etiqueta determinada
+- .getElementsByClass("clase"): nos devuelve un array de elementos con una clase determianda
+- .querySelector("selector"): devuelve el primer elemento
+- .querySelectorAll("selector"): nos devulve un array de elementos que cumplen dicho selector
+- .documentElement: devuelve el elemento que representa la etiqueta html
+- .activeElement: devuelve el elemento con el foco activo
+- .[tipo]
+
+Ejemplo:
+	let listaElements = document.querySelectorAll("li"); -> devuelve array
+
+MODIFICAR ELEMENTOS
+
+Modificar propiedades relacionadas con el contenido, jugamos con los atributos
+
+Propiedades
+- innerHTML: establece el contenido entre etiquetas
+- outerHTML: establece el contenido, incluyendo la propia etiqueta
+- innetText: establece el contenido entre etiquetas (texto plano)
+
+MODIFICAR ESTILOS
+
+A través de la propiedad style modificaremos los diferentes estilos de los elementos
