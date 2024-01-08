@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica I - Strings</title>
+</head>
+<body>
+<p id="contenidoParrafo"></p>
+<script>
+    /*
+    Enunciado 1: Te han pedido que incluyas en el texto de la próxima newsletter unas variables dinámicas que
+    te vienen del usuario
+
+    Nombre: Daniel
+    Videojuego: Half-Life 2
+    Descuento: 35%
+    */
+   var nombre = 'Daniel';
+   var videojuego = 'Half-Life 2';
+   var descuento = 35;
+   var contenido = `Hola ${nombre}, al acceder por primera vez a GAMERS3, como regalo se te aplicará un
+   ${descuento}% de descuento en un titúlo de tu interes, como podría ser ${videojuego}. GRACIAS POR TU VISITA`;
+    document.getElementById('contenidoParrafo').innerHTML=contenido;
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Strings I</title>
+</head>
+<body>
+    <script>
+       // Concatenar texto
+       console.log("hello"+" world");
+
+       // Unir texto con variables (template literals)
+       var nombre = "Daniel Alfonso";
+       console.log('Hola '+nombre); 
+       console.log(`Hola ${nombre}`);
+
+       // typeof
+       console.log(typeof nombre);
+
+       // longitud de la cadena
+       console.log(nombre.length);
+
+       // Comprueba, usando el método includes, si la cadena incluye cierto contenido (devuelve valor booleano)
+       console.log(nombre.includes(' '));
+
+       // cortamos la cadena
+       console.log(nombre.slice(2,4));
+
+       // Reemplazar cierto contenido de la cadena
+       console.log(nombre.replace('Alf','Cal'));
+
+       // Eliminamos los espacios del inicio y el final de la cadena
+       var texto = '     Paco palisas der  ';
+       console.log(texto.trim());
+
+       // Dividimos una cadena de texto en un array 
+       var direccion = 'Calle Pedro López Ramírez, Nº27, Arcos de la Frontera';
+       direccion = direccion.split(',');
+       console.log(direccion); // array
+       console.log(direccion[2]); // Elemento del array
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 02 - Javascript (Numbers)</title>
+</head>
+<body>
+    <script>
+        /*
+        Calculo de carrito de la compra
+        Articulos: móvil(300€), cascos(30€) y funda(18€)
+        Al ser la primera compra, se le aplicará un descuento del 10%
+        */
+
+        // Definimos el porcentaje a aplicar el descuento
+        const descuento = 10;
+        
+        // Definimos los artículos
+        var movil = 300;
+        var cascos = 30; 
+        var funda = 18;
+
+        // Realizamos el calculo del subtotal (sin aplicar descuento)
+        var subtotal = movil + cascos +funda;
+
+        // El precio final (descuento incluido)
+        var precio_final = subtotal * descuento / 100;
+        alert("El carrito de la compra tiene actualmente un valor de "+precio_final +" €");
+    </script>
+</body>
+</html>
